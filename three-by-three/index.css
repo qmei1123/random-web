@@ -1,0 +1,19 @@
+body {
+    background-color: #474747;
+}
+.big-box {
+    position: relative;
+    width: 180px;
+    max-height: 180px;
+    z-index: 1;
+    top: calc(50vh - 90px);
+    left: calc(50% - 90px);
+}
+.small-box {
+    position: relative;
+    float:right;
+    width: 60px;
+    height: 60px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
