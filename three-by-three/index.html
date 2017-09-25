@@ -17,7 +17,6 @@
             </div>
             <div class="col-xs-6">
                 <div class="big-box">
-                   <div class="small-box"></div><div class="small-box"></div><div class="small-box"></div><div class="small-box"></div><div class="small-box"></div><div class="small-box"></div><div class="small-box"></div><div class="small-box"></div><div class="small-box"></div>
                 </div>
             </div>
             <div class="col-xs-3">
@@ -30,5 +29,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!----JS files---->
     <script src="index.js"></script>
+    
+<!---Small box--->
+    <script>
+        $(document).ready();
+        function makeSmallbox() {
+            for (i=0; i < 9; i++) {
+                $(".big-box").append("<div class='small-box'></div>")
+            };
+            $(".small-box").each(function(){
+                $(this).css("background-color", getEmptyColor());
+            }); 
+        }
+        makeSmallbox();
+    </script>
 </body>
 </html>
